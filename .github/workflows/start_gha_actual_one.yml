@@ -1,7 +1,7 @@
 #1.  what is the name of the workflow
 name: Testing a full cicd job
 
-#2. when do you want this to run
+#2. when do you want this to run.
 on:
   push:
     branches: ["main", "my-new-branch"]
