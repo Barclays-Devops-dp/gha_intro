@@ -1,0 +1,47 @@
+#  harsh mark means a comment. 
+# Basic structure //
+
+#1. indentation: Yaml uses indentation to represnt the structure of the data.
+
+students:
+  - Peter
+  - Ola
+
+courses:
+  - devops
+  - data science
+  - sofware
+
+#2. Key-Value Pairs: Yaml documents consits of key values pairs
+
+#key:     value
+runs-on: linux server
+name: "Github Action Job"
+num_of_servers: 50
+do_you_want_to_shutdown: false
+
+#2. lists: Yaml supports lists, which are denoed by a hyphen followed by a space ("-").
+#list can contain any combintaion of strings (text), numbers and booleans (true /false) or even oter lists
+
+provisions:
+  - sardine
+    types:
+       - geisure
+       - titus
+  - shito
+      big_size: true
+  - geisha
+  - tin milk
+  - milo
+      quantity: 100
+
+provisions: [sardine, shito, geisha, tin milk, milo]
+
+#nexted list. 
+users:
+  - name: Peter
+    worth: £5bn
+  - name: Ola
+    worth: £7bn
+  - name: 
+  
