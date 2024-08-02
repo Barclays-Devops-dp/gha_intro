@@ -1,0 +1,42 @@
+#1.  what is the name of the workflow
+name: Testing a full cicd job
+
+#2. when do you want this to run
+on:
+  push:
+    branches: ["main", "my-new-branch"]
+  pull_request:
+
+#3. what should actually be run
+
+jobs:
+  # name of the name
+  build-job:
+    #4  where or which machine /server (runner) should run this job ( build-job)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 1st step for "build-job"
+        run: ls
+
+      - name: 2nd step for "build-job"
+        run: mkdir custom_folder
+
+      - name: 3rd step for "build job"
+        run: ls -l
+
+      - name: 4th step for "build"
+        run: df -h
+
+
+
+
+
+
+  # test
+  # release
+  # deploy
+
+
+
