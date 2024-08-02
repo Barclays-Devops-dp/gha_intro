@@ -4,7 +4,7 @@ name: Testing a full cicd job
 #2. when do you want this to run.
 on:
   push:
-    branches: ["my-new-branch"]
+    # branches: ["my-new-branch"]
   pull_request:
 
 #3. what should actually be run. 
