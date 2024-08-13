@@ -28,6 +28,13 @@ jobs:
 
       - name: 4th step for "build"
         run: df -h
+  
+  second-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - name: second-job-step1
+        run: echo "this is a second job step 1"
 
 
 
