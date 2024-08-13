@@ -37,3 +37,6 @@ jobs:
     - name: Which user is running this project
       run: echo ${{ env.USER }}
       
+    - name: Display repository information
+      run: echo "Repository name: ${{ github.repository}}"
+  
