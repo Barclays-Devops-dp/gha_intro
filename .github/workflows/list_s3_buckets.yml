@@ -5,6 +5,10 @@ on:
   push:
     branches: ["s3"]
   workflow_dispatch:
+
+env:
+  USER: Peter
+
 #3. what should actually be run. ..
 jobs:
   list-s3:
@@ -29,4 +33,7 @@ jobs:
     - name: create EC2 instance
       run: |
         aws ec2 run-instances --image-id ami-05ea2888c91c97ca7 --count 1 --instance-type t2.micro --key-name ${{ secrets.AWS_KEYPAIR_NAME }} --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=CreatedByGithubAction}]'
+    
+    - name: Which user is running this project
+      run: echo ${{ env.NAME }}
       
