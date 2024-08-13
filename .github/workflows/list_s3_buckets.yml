@@ -38,5 +38,5 @@ jobs:
       run: echo ${{ env.USER }}
       
     - name: Display repository information
-      run: echo "Repository name: ${{ github.repository}}"
+      run: echo "Repository name- ${{ github.repository}}"
   
