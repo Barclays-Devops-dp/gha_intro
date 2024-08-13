@@ -1,0 +1,19 @@
+#1.  what is the name of the workflow
+name: list s3 buckets 
+#2. when do you want this to run.
+on:
+  push:
+    branches: ["s3"]
+  workflow_dispatch:
+#3. what should actually be run. ..
+jobs:
+  list-s3:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout repository
+      uses: actions/checkout@v2
+    
+    - name: list s3 contents
+      run: |
+        aws s3 ls
