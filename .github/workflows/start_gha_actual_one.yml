@@ -7,6 +7,8 @@ on:
     # branches: ["my-new-branch"]
   pull_request:
 
+  workflow_dispatch:  # this helps you manually run the job
+
 #3. what should actually be run. 
 
 jobs:
